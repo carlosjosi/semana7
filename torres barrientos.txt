@@ -1,0 +1,387 @@
+------CREAMOS LA TABLA : EstudianteG
+
+CREATE TABLE EstudianteG(
+    Codigo                  NUMBER,
+    Apellidos_y_Nombres     VARCHAR2 (80),
+    Correo                  VARCHAR2 (80),
+    Carrera                 VARCHAR2 (80),
+    Curso1                   VARCHAR2 (80),
+    Curso2                   VARCHAR2 (80),
+    Curso3                   VARCHAR2 (80)
+    );
+---CREE UNA SECUENCIA LLAMADA SQ_EstudianteG
+
+CREATE SEQUENCE SQ_EstudianteG
+START WITH 1
+INCREMENT BY 1
+MINVALUE 1
+NOCYCLE;
+
+
+--------PRUEBA LA SECUENCIA UTILIZADO SQ_EstudianteG
+SELECT
+        SQ_EstudianteG.NEXTVAL
+        FROM
+            DUAL;
+COMMIT;
+
+------------LISTAR REGISTRO
+
+SELECT
+    *
+FROM
+    EstudianteG;
+
+
+INSERT INTO EstudianteG VALUES (
+    2016200001,
+    'ABARCA VERA GERSON DAVID',
+    'geda.abarca@hotmail.com',
+    'Ing. de Sistemas',
+    'Diseño de base de datos',
+    '',
+    'Estructuras Discretas'
+    );
+
+
+INSERT INTO EstudianteG VALUES (
+    1823010670,
+    'AMANQUI CHAVEZ RIVALDO JULIO',
+    'rjulio2800@gmail.com',
+    'Ing. de Sistemas',
+    'Algoritmos y Estructuras de Datos',
+    '',
+    'Diseño de Base de Datos'
+    );
+
+INSERT INTO EstudianteG VALUES (
+    1913010953,
+    'BERRIO HUAMANI MIGUEL ANGEL',
+    'miguelberrioh@hotmail.com',
+    'Ing. de Sistemas',
+    'Big Data',
+    'Arquitectura de Software',
+    'Diseño de Base de Datos'
+    );
+
+INSERT INTO EstudianteG VALUES (
+    2014100492,
+    'CASTILLON CARDENAS JAIRO DANTE',
+    'jairo.2.26.m@gmail.com',
+    'Ingenieria de Sitemas',
+    'Lenguaje de programacion II',
+    'Diseño de Base de datos',
+    '  '
+    );
+
+INSERT INTO EstudianteG VALUES (
+    2014100492,
+    'CASTILLON CARDENAS JAIRO DANTE',
+    'jairo.2.26.m@gmail.com',
+    'Ingenieria de Sitemas',
+    'Lenguaje de programacion II',
+    'Diseño de Base de datos',
+    '  '
+    );
+    
+------CREAMOS LA TABLA : Estudiantes1
+
+CREATE TABLE Estudiantes2(
+    idEstudiante            NUMBER PRIMARY KEY,
+    codigo                  NUMBER,
+    Apellidos_y_nombres     VARCHAR2 (80),
+    Correo                  VARCHAR2 (80),
+    idCarrera               NUMBER
+    );
+
+---CREE UNA SECUENCIA LLAMADA SQ_Estudiantes2
+
+CREATE SEQUENCE SQ_Estudiantes2
+START WITH 1
+INCREMENT BY 1
+MINVALUE 1
+NOCYCLE;
+
+--------PRUEBA LA SECUENCIA UTILIZADO SQ_Estudiantes2
+SELECT
+        SQ_Estudiantes2.NEXTVAL
+        FROM
+            DUAL;
+COMMIT;
+
+------------LISTAR REGISTRO
+
+SELECT
+    *
+FROM
+    Estudiantes2;
+
+-------------AGREGAR GENTE
+
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    2016200001,
+    'ABARCA VERA GERSON DAVID',
+    'geda.abarca@hotmail.com',
+    1
+    );
+    
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    1823010670,
+    'AMANQUI CHAVEZ RIVALDO JULIO',
+    'rjulio2800@gmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    1913010953,
+    'BERRIO HUAMANI MIGUEL ANGEL',
+    'miguelberrioh@hotmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    2014100492,
+    'CASTILLON CARDENAS JAIRO DANTE',
+    'jairo.2.26.m@gmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    1823010257,
+    'CCALLOQUISPE QUISPE ANGEL ANDERSON',
+    'zelsperson@gmail.com',
+    1
+    );
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    1823110215,
+    'GAMBOA CONDORI CRISTIAN',
+    'cristian9gc@gmail.com',
+    5
+    );
+
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    2014200776,
+    'GOMEZ TORRES JASON FIDEL',
+    'jasongomez246@gmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES(
+    SQ_Estudiantes2.NEXTVAL,
+    1913010909,
+    'GONZALES GOMEZ DYLAN CARUSSO',
+    'dylancartroll@hotmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    11,
+    1913010940,
+    'GONZALES MOYA LUIGGI PAOLO',
+    'luiggi.gonzalesmoya@gmail.com',
+    5
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    12,
+    2015200357,
+    'GUZMAN DAVILA DIANA AZUCENA',
+    'dianagzmn.05@gmail.com',
+    1
+    );
+INSERT INTO Estudiantes2 VALUES (
+    13,
+    2016100125,
+    'HOYOS REYNA JORGE ARMANDO',
+    'thelordjorge@gmail.com',
+    6
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    14,
+    1823010636,
+    'RUIZ FLORES PEDRO PABLO',
+    'pedropablo1407@hotmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    15,
+    1823010111,
+    'INGA MOLINA SEBASTIAN LUIS',
+    'ingaamable@gmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    16,
+    2017110647,
+    'PUMA CCALLO JOHN CHRISTOFER',
+    'john_puma_24@outlook.es',
+    5
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    17,
+    2013200084,
+    'VEJARANO CERNA AXL JAIME JAVIER',
+    'axlvejarano@gmail.com',
+    1
+    );
+
+
+INSERT INTO Estudiantes2 VALUES (
+    18,
+    1823110517,
+    'VERA YAURI VICTOR ADRIAN',
+    'victorverayauri@gmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    20,
+    2014200177,
+    'VILLA UÑAPILLCO TITO DARWIN',
+    'styf.15.dota@gmail.com',
+    1
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    21,
+    1813011387,
+    'YACHACHIN YACOLCA DIANA LUCIA',
+    'dianaluciaya@hotmail.com',
+    7
+    );
+
+INSERT INTO Estudiantes2 VALUES (
+    22,
+    1913110201,
+    'ZAPATA YAMO LUIS JHONAYQUER',
+    'jhonayquer@gmail.com',
+    1
+    );
+
+
+SELECT
+    *
+FROM
+    Estudiantes2;
+-----------------------------------
+------CREAMOS LA TABLA : CARRERAS
+
+CREATE TABLE Carrera(
+    idcarrera            NUMBER PRIMARY KEY,
+    Nombre               VARCHAR2 (80)
+    );
+
+---CREE UNA SECUENCIA LLAMADA SQ_Carreras
+
+CREATE SEQUENCE SQ_Carreras
+START WITH 1
+INCREMENT BY 1
+MINVALUE 1
+NOCYCLE;
+
+--------PRUEBA LA SECUENCIA UTILIZADO SQ_Carreras
+SELECT
+        SQ_Carreras.NEXTVAL
+        FROM
+            DUAL;
+COMMIT;
+
+------------LISTAR REGISTRO
+
+SELECT
+    *
+FROM
+    Carreras;
+    
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Ing. Sistemas'
+     );
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Medicina'
+     );
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Ing. Ambiental'
+     );
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Ing. Civil'
+     );
+
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Ing. Informática'
+     );
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Ing. Software'
+     );
+
+INSERT INTO Carreras VALUES(
+    SQ_Carreras.NEXTVAL,
+    'Mecatrónica'
+     );
+
+SELECT
+    *
+FROM
+    Carrera;
+
+INSERT INTO carrera VALUES (
+    1,
+    'Ing. Sistemas'
+    );
+
+INSERT INTO carrera VALUES (
+    2,
+    'Medicina'
+    );
+
+INSERT INTO carrera VALUES (
+    3,
+    'Ing. Ambiental'
+    );
+
+INSERT INTO carrera VALUES (
+    4,
+    'Ing. Civil'
+    );
+
+INSERT INTO carrera VALUES (
+    5,
+    'Ing. Informática'
+    );
+
+INSERT INTO carrera VALUES (
+    6,
+    'Ing. Software'
+    );
+INSERT INTO carrera VALUES (
+    7,
+    'Mecatrónica'
+    );
+
+
+SELECT
+    *
+FROM
+    Carrera;

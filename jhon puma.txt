@@ -1,0 +1,70 @@
+CREATE TABLE CURSO (
+  IDCURSO  NUMBER PRIMARY KEY,
+  NOMBRE VARCHAR2(20) NOT NULL
+  );
+  
+  INSERT INTO CURSO
+VALUES (1,'Diseño de Base de datos ');
+
+INSERT INTO CURSO
+VALUES (2,'Investigación Operativa II');
+
+
+INSERT INTO CURSO
+VALUES (3,'Estructuras discretas');
+
+INSERT INTO CURSO
+VALUES (4,'Algoritmos y Estructuras de Datos');
+
+INSERT INTO CURSO
+VALUES (5,'Big Data');
+
+INSERT INTO CURSO
+VALUES (6,'Arquitectura de Software');
+
+INSERT INTO CURSO
+VALUES (7,'Sistemas Digitales');
+
+INSERT INTO CURSO
+VALUES (8,'Microprocesadores');
+
+INSERT INTO CURSO
+VALUES (9,'LP II');
+
+INSERT INTO CURSO
+VALUES (10,'Matematica IV');
+
+INSERT INTO CURSO
+VALUES (11,'Microeconomía');
+
+INSERT INTO CURSO
+VALUES (12,'TGS');
+
+INSERT INTO CURSO
+VALUES (13,'Filosofía');
+
+INSERT INTO CURSO
+VALUES (14,'Matemática ');
+
+INSERT INTO CURSO
+VALUES (15,'LP1 ');
+
+INSERT INTO CURSO
+VALUES (16,'SAP ');
+
+INSERT INTO CURSO
+VALUES (17,'Macroeconomia ');
+
+INSERT INTO CURSO
+VALUES (18,'Dinamica de SIstemas ');
+
+INSERT INTO CURSO
+VALUES (19,'Microprocesadores ');
+
+INSERT INTO CURSO
+VALUES (20,'Analisis y Diseño de Sistemas ');
+
+INSERT INTO CURSO
+VALUES (21,'Simulacion de Sistemas ');
+
+commit;
